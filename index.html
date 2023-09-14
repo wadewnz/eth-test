@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base id="base" href="/eth-test/"/>
+    <script type="application/javascript">
+      let path = location.pathname;
+      //console.log('localtion.pathname=' + path);
+      let pos = 0;
+      path = (pos = path.lastIndexOf('/')) > 0 ? path.substr(0, pos + 1) : '/';
+      document.getElementById('base').href = path;
+      //console.log('path=' + path);
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Ethereum</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
