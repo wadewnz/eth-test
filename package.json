@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@metamask/sdk": "^0.6.2",
     "events": "^3.3.0",
     "vue": "^3.3.4",
     "web3-eth-accounts": "^4.0.5"
