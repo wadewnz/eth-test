@@ -394,8 +394,8 @@ async function transferWithData() {
     //0x87a2Fc0E620eECd7D2c012F5C045baF5cC12446d
     const contract = new ethers.Contract("0xa450cE20a38eB3064783a3AdC43e379140817912", abi, provider);
 
-    const signer = await provider.getSigner('0xa693d26e6ab62829d511dff2fb9b65656f052247'); // Assumes Metamask or similar is injected in the browser
-    const contractWithSigner = contract.connect(signer) as any;
+    // const signer = await provider.getSigner('0xa693d26e6ab62829d511dff2fb9b65656f052247'); // Assumes Metamask or similar is injected in the browser
+    // const contractWithSigner = contract.connect(signer) as any;
 
     const sym = await contract.symbol();
     // The number of decimals the token uses
